@@ -31,7 +31,6 @@ attr_accessor :name, :artist, :genre
   def self.genre_count
     genre_count = Hash.new(0)
     @@genres.each {|genre| genre_count[genre] += 1}
-    binding.pry
     genre_count
   end
   
